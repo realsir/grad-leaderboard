@@ -1,0 +1,23 @@
+{
+  "name": "gradient-leaderboard",
+  "functions": {
+    "api/scrape.js": {
+      "maxDuration": 60
+    },
+    "api/leaderboard.js": {
+      "maxDuration": 10
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
+    }
+  ],
+  "crons": [
+    {
+      "path": "/api/scrape",
+      "schedule": "0 9 * * *"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "gradient-leaderboard",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "X Community Leaderboard for Gradient Community",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "puppeteer-core": "^23.5.1"
+  },
+  "engines": {
+    "node": "20.x"
+  }
+}
